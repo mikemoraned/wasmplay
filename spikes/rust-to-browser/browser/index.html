@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rust to Browser Example</title>
+</head>
+<body>
+    <h1>Rust to Browser Example</h1>
+    <p>Check the console for output.</p>
+    <script type="module">
+        import { add } from "./dist/transpiled/add.js";
+        console.log("1 + 2 = " + add.add(1, 2));
+    </script>
+</body>
+</html>
