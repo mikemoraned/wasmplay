@@ -23,16 +23,4 @@ Relationship between Arrow and WIT? Particularly [resources](https://component-m
 
 # Try it out
 
-Rust components, based on [https://component-model.bytecodealliance.org/language-support/rust.html\#building-a-component-with-cargo-component](https://component-model.bytecodealliance.org/language-support/rust.html#building-a-component-with-cargo-component)
-```
-cargo install --locked wasm-tools
-cargo install --locked cargo-component
-brew install wasmtime # using brew rather than piping to shell. brew version looks up-to-date, so use that instead
-```
-
-JS side:
-```
-npm install @bytecodealliance/jco
-```
-
-See commit comments on [rust-to-browser spike](spikes/rust-to-browser) for rest ...
+See [spikes/rust-to-browser](spikes/rust-to-browser)
