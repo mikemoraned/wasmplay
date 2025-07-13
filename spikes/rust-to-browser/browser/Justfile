@@ -1,0 +1,13 @@
+install_tools:
+    npm install --verbose @bytecodealliance/jco
+    brew install serve
+
+build:
+    mkdir -p dist/transpiled
+    npx jco transpile ../add/target/wasm32-wasip1/release/add.wasm -o dist/transpiled
+
+run_node:
+    node node_add.js
+
+run_browser:
+    serve . 
